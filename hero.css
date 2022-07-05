@@ -347,6 +347,25 @@
   margin-top: 2rem;
 }
 
+@media screen and (max-width: 554px) and (min-height: 845px) {
+  .mainParent .mainContent .eggLogo {
+    width: 20rem;
+    margin-left: -1rem;
+    margin-top: 12rem;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    pointer-events: none;
+  }
+  .mainParent .mainContent .lowerHero .good {
+    font-size: 1.9rem;
+    width: 22rem;
+    margin-top: 2rem;
+  }
+  .mainParent .mainContent .lowerHero .good span {
+    color: #FFD27A;
+  }
+}
+
 @media screen and (min-width: 555px) {
   .meals {
     width: 100%;
