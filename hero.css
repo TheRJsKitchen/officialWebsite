@@ -60,7 +60,7 @@
 
 .mainParent .mainContent .eggLogo {
   width: 18rem;
-  margin-left: -1rem;
+  margin-left: 0rem;
   margin-top: 7rem;
   -ms-grid-column-align: center;
       justify-self: center;
@@ -350,7 +350,6 @@
 @media screen and (max-width: 554px) and (min-height: 845px) {
   .mainParent .mainContent .eggLogo {
     width: 20rem;
-    margin-left: -1rem;
     margin-top: 12rem;
     -ms-grid-column-align: center;
         justify-self: center;
