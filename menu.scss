@@ -1,0 +1,375 @@
+$playfair: 'Playfair Display', serif;
+$poppins: 'Poppins', sans-serif;
+$caramel: #FFD27A;
+$orange: #DB5C00;
+$green: #64A959;
+$black: #272727;
+$white: #f3f3f3; 
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 0;
+    z-index: -1;
+    margin-top: -5rem;
+    
+}
+
+
+// SMALLEST SCREENS
+@media screen and (max-width: 590px) {
+    // MENU HERO
+    .menu-hero {
+        width: 100%;
+        height: 20rem   ;
+        background: url(./img/menu/menu-header.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        color: $caramel;
+        overflow: hidden;
+        // MENU TEXT CONTAINER
+        .menu-txt {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 1em;
+            margin-top: 2rem;
+            h1 {
+                font-family: $poppins;
+                font-size: 4rem;
+                line-height: 5.6rem;
+                font-weight: 800;
+                text-align: center;
+            }
+            p {
+                font-family: $playfair;
+                font-size: 1.2rem;
+                font-weight: 100;
+                text-align: center;
+                margin-top: -4rem;
+            }
+        }    
+    }
+
+    .menu {
+        width: 100%;
+        padding: 2em 1em 5em 1em;
+        background: $black;
+        color: $white;
+        font-family: $poppins;
+        .menu-wrapper {
+            .menu-row {
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+                align-items: center;
+                .menu-item {
+                    display: flex;
+                    margin: 1em;
+                    width: 90%;
+                    h1 {
+                        color: $green;
+                        font-size: 1.8rem;
+                        line-height: 1.8rem;
+                        padding-bottom: 0.5em;
+                    }
+                    flex-direction: column;
+                    .menu-details {
+                        display: flex;
+                        justify-content: space-between;
+                        .menu-name {
+                            list-style: none;
+                            color: $white;
+                            padding-right: 1em;
+                            font-size: 0.8rem;
+                        }
+                        .menu-price {
+                            list-style: none;
+                            color: $caramel;
+                            padding-left: 1em;
+                            text-align: right;
+                            font-size: 0.8rem;
+                        }
+                        .price-db {
+                            display: flex;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// SMALLER SCREENS
+@media screen and (min-width: 581px) {
+    // MENU HERO
+    .menu-hero {
+        width: 100%;
+        height: 20rem   ;
+        background: url(./img/menu/menu-header.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        color: $caramel;
+        overflow: hidden;
+        // MENU TEXT CONTAINER
+        .menu-txt {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 1em;
+            margin-top: 2rem;
+            h1 {
+                font-family: $poppins;
+                font-size: 4rem;
+                line-height: 5.6rem;
+                font-weight: 800;
+
+                text-align: center;
+            }
+            p {
+                font-family: $playfair;
+                font-size: 1.2rem;
+                font-weight: 100;
+                text-align: center;
+                margin-top: -4rem;
+            }
+        }    
+    }
+
+    .menu {
+        width: 100%;
+        padding: 2em 1em 5em 1em;
+        background: $black;
+        color: $white;
+        font-family: $poppins;
+        .menu-wrapper {
+            .menu-row {
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+                align-items: center;
+                .menu-item {
+                    display: flex;
+                    margin: 1em;
+                    width: 70%;
+                    h1 {
+                        color: $green;
+                        font-size: 2rem;
+                    }
+                    flex-direction: column;
+                    .menu-details {
+                        display: flex;
+                        justify-content: space-between;
+                        .menu-name {
+                            list-style: none;
+                            color: $white;
+                            padding-right: 1em;
+                        }
+                        .menu-price {
+                            list-style: none;
+                            color: $caramel;
+                            padding-left: 1em;
+                            text-align: right;
+                        }
+                        .price-db {
+                            display: flex;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// LARGER SCREENS
+@media screen and (min-width: 790px) {
+    // MENU HERO
+    .menu-hero {
+        width: 100%;
+        height: 24rem   ;
+        background: url(./img/menu/menu-header.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        color: $caramel;
+        overflow: hidden;
+        // MENU TEXT CONTAINER
+        .menu-txt {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 1em;
+            margin-top: 1rem;
+            h1 {
+                font-family: $poppins;
+                font-size: 5.5rem;
+                line-height: 5.6rem;
+                font-weight: 800;
+                text-align: center;
+            }
+            p {
+                font-family: $playfair;
+                font-size: 1.5rem;
+                font-weight: 100;
+                text-align: center;
+            }
+        }    
+    }
+
+    .menu {
+        width: 100%;
+        padding: 2em 1em 5em 1em;
+        background: $black;
+        color: $white;
+        font-family: $poppins;
+        .menu-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .menu-row {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                width: 95%;
+                .menu-item {
+                    display: flex;
+                    margin: 0.8em;
+                    width: 80%;
+                    h1 {
+                        color: $green;
+                        font-size: 2rem;
+                        line-height: 2rem;
+                        padding-bottom: 0.8em;
+                    }
+                    flex-direction: column;
+                    .menu-details {
+                        display: flex;
+                        justify-content: space-between;
+                        .menu-name {
+                            list-style: none;
+                            color: $white;
+                            padding-right: 0.5em;
+                            font-size: 0.85rem;
+                        }
+                        .menu-price {
+                            list-style: none;
+                            color: $caramel;
+                            padding-left: 0.5em;
+                            text-align: right;
+                            font-size: 0.85rem;
+                        }
+                        .price-db {
+                            display: flex;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// LARGER SCREENS
+@media screen and (min-width: 1100px) {
+// MENU HERO
+.menu-hero {
+    width: 100%;
+    height: 25rem   ;
+    background: url(./img/menu/menu-header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: $caramel;
+    overflow: hidden;
+    // MENU TEXT CONTAINER
+    .menu-txt {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1em;
+        margin-top: 1rem;
+        h1 {
+            font-family: $poppins;
+            font-size: 6.5rem;
+            line-height: 5.6rem;
+            font-weight: 800;
+            text-align: center;
+        }
+        p {
+            font-family: $playfair;
+            font-size: 1.9rem;
+            font-weight: 100;
+            text-align: center;
+            margin-top: -5rem;
+        }
+    }    
+}
+
+    .menu {
+        width: 100%;
+        padding: 2em 1em 5em 1em;
+        background: $black;
+        color: $white;
+        font-family: $poppins;
+        .menu-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .menu-row {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                width: 70%;
+                .menu-item {
+                    display: flex;
+                    margin: 1em;
+                    width: 50%;
+                    h1 {
+                        color: $green;
+                        font-size: 2rem;
+                        line-height: 2rem;
+                        padding-bottom: 0.8em;
+                    }
+                    flex-direction: column;
+                    .menu-details {
+                        display: flex;
+                        justify-content: space-between;
+                        .menu-name {
+                            list-style: none;
+                            color: $white;
+                            padding-right: 0.5em;
+                            font-size: 0.9rem;
+                        }
+                        .menu-price {
+                            list-style: none;
+                            color: $caramel;
+                            padding-left: 0.7em;
+                            text-align: right;
+                            font-size: 0.9rem;
+                        }
+                        .price-db {
+                            display: flex;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

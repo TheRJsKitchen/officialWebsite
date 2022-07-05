@@ -1,0 +1,472 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+.wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: 0;
+  z-index: -1;
+  margin-top: -5rem;
+}
+
+@media screen and (max-width: 590px) {
+  .menu-hero {
+    width: 100%;
+    height: 20rem;
+    background: url(./img/menu/menu-header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #FFD27A;
+    overflow: hidden;
+  }
+  .menu-hero .menu-txt {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 1em;
+    margin-top: 2rem;
+  }
+  .menu-hero .menu-txt h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 4rem;
+    line-height: 5.6rem;
+    font-weight: 800;
+    text-align: center;
+  }
+  .menu-hero .menu-txt p {
+    font-family: "Playfair Display", serif;
+    font-size: 1.2rem;
+    font-weight: 100;
+    text-align: center;
+    margin-top: -4rem;
+  }
+  .menu {
+    width: 100%;
+    padding: 2em 1em 5em 1em;
+    background: #272727;
+    color: #f3f3f3;
+    font-family: "Poppins", sans-serif;
+  }
+  .menu .menu-wrapper .menu-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .menu .menu-wrapper .menu-row .menu-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 1em;
+    width: 90%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .menu .menu-wrapper .menu-row .menu-item h1 {
+    color: #64A959;
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+    padding-bottom: 0.5em;
+  }
+  .menu .menu-wrapper .menu-row .menu-item .menu-details {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .menu .menu-wrapper .menu-row .menu-item .menu-details .menu-name {
+    list-style: none;
+    color: #f3f3f3;
+    padding-right: 1em;
+    font-size: 0.8rem;
+  }
+  .menu .menu-wrapper .menu-row .menu-item .menu-details .menu-price {
+    list-style: none;
+    color: #FFD27A;
+    padding-left: 1em;
+    text-align: right;
+    font-size: 0.8rem;
+  }
+  .menu .menu-wrapper .menu-row .menu-item .menu-details .price-db {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 581px) {
+  .menu-hero {
+    width: 100%;
+    height: 20rem;
+    background: url(./img/menu/menu-header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #FFD27A;
+    overflow: hidden;
+  }
+  .menu-hero .menu-txt {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 1em;
+    margin-top: 2rem;
+  }
+  .menu-hero .menu-txt h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 4rem;
+    line-height: 5.6rem;
+    font-weight: 800;
+    text-align: center;
+  }
+  .menu-hero .menu-txt p {
+    font-family: "Playfair Display", serif;
+    font-size: 1.2rem;
+    font-weight: 100;
+    text-align: center;
+    margin-top: -4rem;
+  }
+  .menu {
+    width: 100%;
+    padding: 2em 1em 5em 1em;
+    background: #272727;
+    color: #f3f3f3;
+    font-family: "Poppins", sans-serif;
+  }
+  .menu .menu-wrapper .menu-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .menu .menu-wrapper .menu-row .menu-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 1em;
+    width: 70%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .menu .menu-wrapper .menu-row .menu-item h1 {
+    color: #64A959;
+    font-size: 2rem;
+  }
+  .menu .menu-wrapper .menu-row .menu-item .menu-details {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .menu .menu-wrapper .menu-row .menu-item .menu-details .menu-name {
+    list-style: none;
+    color: #f3f3f3;
+    padding-right: 1em;
+  }
+  .menu .menu-wrapper .menu-row .menu-item .menu-details .menu-price {
+    list-style: none;
+    color: #FFD27A;
+    padding-left: 1em;
+    text-align: right;
+  }
+  .menu .menu-wrapper .menu-row .menu-item .menu-details .price-db {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 790px) {
+  .menu-hero {
+    width: 100%;
+    height: 24rem;
+    background: url(./img/menu/menu-header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #FFD27A;
+    overflow: hidden;
+  }
+  .menu-hero .menu-txt {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 1em;
+    margin-top: 1rem;
+  }
+  .menu-hero .menu-txt h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 5.5rem;
+    line-height: 5.6rem;
+    font-weight: 800;
+    text-align: center;
+  }
+  .menu-hero .menu-txt p {
+    font-family: "Playfair Display", serif;
+    font-size: 1.5rem;
+    font-weight: 100;
+    text-align: center;
+  }
+  .menu {
+    width: 100%;
+    padding: 2em 1em 5em 1em;
+    background: #272727;
+    color: #f3f3f3;
+    font-family: "Poppins", sans-serif;
+  }
+  .menu .menu-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .menu .menu-wrapper .menu-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 95%;
+  }
+  .menu .menu-wrapper .menu-row .menu-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0.8em;
+    width: 80%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .menu .menu-wrapper .menu-row .menu-item h1 {
+    color: #64A959;
+    font-size: 2rem;
+    line-height: 2rem;
+    padding-bottom: 0.8em;
+  }
+  .menu .menu-wrapper .menu-row .menu-item .menu-details {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .menu .menu-wrapper .menu-row .menu-item .menu-details .menu-name {
+    list-style: none;
+    color: #f3f3f3;
+    padding-right: 0.5em;
+    font-size: 0.85rem;
+  }
+  .menu .menu-wrapper .menu-row .menu-item .menu-details .menu-price {
+    list-style: none;
+    color: #FFD27A;
+    padding-left: 0.5em;
+    text-align: right;
+    font-size: 0.85rem;
+  }
+  .menu .menu-wrapper .menu-row .menu-item .menu-details .price-db {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .menu-hero {
+    width: 100%;
+    height: 25rem;
+    background: url(./img/menu/menu-header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #FFD27A;
+    overflow: hidden;
+  }
+  .menu-hero .menu-txt {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 1em;
+    margin-top: 1rem;
+  }
+  .menu-hero .menu-txt h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 6.5rem;
+    line-height: 5.6rem;
+    font-weight: 800;
+    text-align: center;
+  }
+  .menu-hero .menu-txt p {
+    font-family: "Playfair Display", serif;
+    font-size: 1.9rem;
+    font-weight: 100;
+    text-align: center;
+    margin-top: -5rem;
+  }
+  .menu {
+    width: 100%;
+    padding: 2em 1em 5em 1em;
+    background: #272727;
+    color: #f3f3f3;
+    font-family: "Poppins", sans-serif;
+  }
+  .menu .menu-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .menu .menu-wrapper .menu-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 70%;
+  }
+  .menu .menu-wrapper .menu-row .menu-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 1em;
+    width: 50%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .menu .menu-wrapper .menu-row .menu-item h1 {
+    color: #64A959;
+    font-size: 2rem;
+    line-height: 2rem;
+    padding-bottom: 0.8em;
+  }
+  .menu .menu-wrapper .menu-row .menu-item .menu-details {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .menu .menu-wrapper .menu-row .menu-item .menu-details .menu-name {
+    list-style: none;
+    color: #f3f3f3;
+    padding-right: 0.5em;
+    font-size: 0.9rem;
+  }
+  .menu .menu-wrapper .menu-row .menu-item .menu-details .menu-price {
+    list-style: none;
+    color: #FFD27A;
+    padding-left: 0.7em;
+    text-align: right;
+    font-size: 0.9rem;
+  }
+  .menu .menu-wrapper .menu-row .menu-item .menu-details .price-db {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+/*# sourceMappingURL=menu.css.map */

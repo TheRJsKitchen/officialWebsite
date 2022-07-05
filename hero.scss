@@ -1,0 +1,1520 @@
+$playfair: 'Playfair Display', serif;
+$poppins: 'Poppins', sans-serif;
+$caramel: #FFD27A;
+$orange: #DB5C00;
+$green: #64A959;
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 102vh;
+    width: 100%;
+    background-size:cover;
+    z-index: -1;
+    background-image: url('img/backGround.webp');
+}
+
+.fullA {
+    text-decoration: none;
+}
+
+.mainParent {
+    height: 92vh;
+    width: 100%;
+    position: relative;
+
+    .flowers {
+        position: absolute;
+        width: 100%;
+        height: 4rem;
+        bottom: -6.1rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-content: center;
+
+        .flowers1 {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .flowers2 {
+            display: none;
+        }
+
+    }
+    
+    .mainContent {
+        height: 100%;
+        max-width: 80rem;
+        margin:0 auto;
+        font-family: $poppins;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        
+
+        .eggLogo {
+            width: 18rem;
+            margin-left: -1rem;
+            margin-top: 7rem;
+            justify-self: center;
+            pointer-events: none;
+        }
+
+        .lowerHero {
+            .good {
+                text-align: center;
+                font-size: 1.6rem;
+                width: 19rem;
+                justify-self: center;
+                margin: 0 auto;
+                color: white;
+                text-shadow: 2px 2px 2px black;
+                pointer-events: none;
+
+                span {
+                    color: $caramel;
+                }
+                
+
+            }
+    
+            .explore {
+                background-color: $orange;
+                width: 8rem;
+                height: 2.5rem;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+                display: flex;
+                border-radius: 14px;
+                margin: 0 auto;
+                color: white;
+                font-size: 0.8rem;
+                margin-top: 3rem;
+                font-weight: 500;
+                letter-spacing: 2px;
+                z-index: 1;
+                position: relative;
+                cursor: pointer;
+    
+            }
+
+            .explore2 {
+                background-color: #4F3624;
+                width: 7.9rem;
+                height: 2.5rem;
+                border-radius: 14px;
+                margin: 0 auto;
+                margin-top: -2.3rem;
+                z-index: -1;
+                position: relative;
+    
+            }
+        }
+
+
+    }
+}
+
+// FEATURED
+.featured {
+    width: 100%;
+    height: 75rem;
+    background-color: #272727;
+    margin-top: 4rem;
+    font-family: $poppins;
+    overflow: hidden;
+
+    .bestDiv {
+        color: white;
+        margin-top: 5rem;
+        text-align: center;
+        font-size: 1.2rem;
+        
+         
+        h1 {
+            position: relative;
+            width: 23rem;
+            text-align: center;
+            margin: 0 auto;
+            margin-bottom: 2rem;
+            span {
+                color: #64A959;
+                
+            }
+        }
+    }
+
+    .foodies {
+        width: 100%;
+        height: 55rem;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    a {
+        .full {
+            width: 11rem;
+            height: 3.5rem;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: $orange;
+            border-radius: 17px;
+            box-shadow: 1px 6px 0px -2px rgba(79,54,36,0.71);
+            -webkit-box-shadow: 1px 6px 0px -2px rgba(79,54,36,0.71);
+            -moz-box-shadow: 1px 6px 0px -2px rgba(79,54,36,0.71);
+            margin: 0 auto;
+        }
+
+    }
+
+    
+}
+
+.foodDiv {
+    display: grid;
+    justify-content: center;
+
+    .foodPics {
+        width: 10rem;
+    }
+
+    .foodNames {
+        text-align: center;
+        color: white;
+        font-style:  $playfair;
+        background-image: url('img/best/NameBG.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        display: flex;
+        margin-top: -2rem;
+        margin-bottom: 1rem;
+        padding-top: 0.8rem;
+        justify-content: center;
+        
+    }
+
+    .inasal {
+        font-size: 0.8rem; 
+        padding-top: 1.1rem;
+    }
+
+    .chicken {
+        font-size: 0.8rem;
+        padding-top: 1.1rem;
+
+    }
+
+}
+
+.bestSeller:before {
+    content: '';
+    background-color: white;
+    position: absolute;
+    width: 5rem;
+    height: 0.1rem;
+    top: 1rem;
+    left: 1.3rem;
+}
+
+.bestSeller:after {
+    content: '';
+    background-color: white;
+    position: absolute;
+    width: 5rem;
+    height: 0.1rem;
+    top: 1rem;
+    right: 1.3rem;
+}
+
+.meals {
+
+    width: 100%;
+    height: 34rem;
+    font-family: $poppins;
+    text-align: center;
+    background-color: white;
+    .mealsContainer {
+        max-width: 25rem;
+        margin: 0 auto;
+        position: relative;
+        margin-top: 2rem;
+        padding-top: 2rem;
+
+
+        .phoneContainer {
+            
+            display: grid;
+            grid-template-columns: 6rem 8rem 6rem;
+            justify-content: center;
+            align-items: center;
+            height: 20rem;
+            margin-top: 2rem;
+
+            .conv {
+                width: 10rem;
+                position: absolute;
+            }
+    
+            .conv1 {
+                left: 1rem;
+                top: 11rem;
+            }
+    
+            .conv2 {
+                bottom: 0;
+                right: 1rem;;
+            }
+
+            .phone {
+                width: 5rem;
+                position: relative;
+                margin: 0 auto;
+            }
+
+            .phone1 {
+                margin-right: -0.5rem;
+            }
+
+            .phone2 {
+                width: 8rem;
+                z-index: 2;
+            }
+
+            .phone3 {
+                margin-left: -0.5rem;
+            }
+
+        }
+    }
+}
+
+// map
+.map {
+    width: 100%;
+    height: 40rem;
+    font-family: $poppins;
+    background-image: url('img/banner.webp');
+    background-image: contain;
+    overflow: hidden;
+
+    
+    .mapContainer {
+        width: 100%;
+        height: 38rem;
+        margin: 0 auto;
+        
+
+        .textMap {
+            
+            text-align: center;
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            p {
+                font-size: 1.1rem;
+                font-weight: 500;
+                
+            }
+
+            .near {
+                margin-top: -1.6rem;
+            }
+
+            .tel {
+                margin-top: -0.5rem;
+            }
+        }
+
+        .googleMap {
+            width: 14rem;
+            height: 14rem;
+            margin: 0 auto;
+            display: block;
+            margin-top: 2rem;
+        }
+    }
+}
+
+@media screen and (min-width: 555px) {
+    .meals {
+        width: 100%;
+        height: 37rem;
+        .mealsContainer {
+            max-width: 35rem;
+
+    
+            .phoneContainer {
+                grid-template-columns: 8rem 10rem 8rem;
+                height: 25rem;
+    
+                .conv {
+                    width: 13rem;
+                }
+        
+                .conv1 {
+                    left: 1rem;
+                    top: 10rem;
+                }
+        
+                .conv2 {
+                    bottom: 0;
+                    right: 1rem;
+                }
+    
+                .phone {
+                    width: 7rem;
+                }
+    
+                .phone1 {
+                    margin-right: 0.5rem;
+                }
+    
+                .phone2 {
+                    width: 10rem;
+                }
+    
+                .phone3 {
+                    margin-left: 0.5rem;
+                }
+    
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 780px) {
+    .mainParent {
+        height: 92vh;
+        width: 100%;
+        position: relative;
+
+        .flowers {
+            position: absolute;
+            width: 100%;
+            height: 7rem;
+            
+            bottom: -2.5rem;
+            display: grid;
+            grid-template-columns: 1fr;
+            align-items: center;
+            justify-content: center;
+    
+            .flowers1 {
+                width: 80%;
+                margin: 0 auto;
+            }
+    
+            .flowers2 {
+                display: none;
+            }
+    
+        }
+
+
+        
+        .mainContent {
+            height: 100%;
+            max-width: 80rem;
+            margin:0 auto;
+            font-family: $poppins;
+            display: grid;
+            grid-template-rows: 1fr;
+            grid-template-columns: 24rem 24rem;
+            align-items: center;
+            justify-content: center;
+            
+
+            .eggLogo {
+                width: 22   rem;
+                margin-left: -2rem;
+                margin-top: 1rem;
+                justify-self: center;
+                grid-area: 1/2;
+            }
+
+            .lowerHero {
+                position: relative;
+                .good {
+                    text-align: right;
+                    font-size: 1.8rem;
+                    width: 23rem;
+                    justify-self: center;
+                    margin: 0 auto;
+                    color: white;
+                    position: relative;
+                    z-index: 2;
+                    margin-top: -1rem;
+                    span {
+                        color: $caramel;
+                    }
+                    
+
+                }
+        
+                .explore {
+                    background-color: $orange;
+                    width: 8rem;
+                    height: 2.5rem;
+                    text-align: center;
+                    justify-content: center;
+                    align-items: center;
+                    display: flex;
+                    border-radius: 18px;
+                    margin: 0;
+                    color: white;
+                    font-size: 0.8rem;
+                    margin-top: 1rem;
+                    font-weight: 500;
+                    letter-spacing: 2px;
+                    z-index: 1;
+                    position: absolute;
+                    right: 0;
+                    margin-right: 0.5rem;
+                    cursor: pointer;
+        
+                }
+
+                .explore2 {
+                    background-color: #4F3624;
+                    width: 7.9rem;
+                    height: 2.5rem;
+                    border-radius: 18px;
+                    margin: 0;
+                    margin-top: 1.2em;
+                    z-index: -1;
+                    position: absolute;
+                    right: 0;
+                    margin-right: 0.55rem;
+        
+                }
+            }
+
+
+        }
+    }
+
+    .good:before {
+        content: url('img/dahon.png');
+        position: absolute;
+        z-index: -1;
+        transform: rotate(220deg) scale(1.8);
+        right: -2rem;
+        top: -4rem;
+    }
+
+    // FEATURED
+    .featured {
+        width: 100%;
+        height: 35rem;
+        background-color: #272727;
+        margin-top: -1rem;
+        font-family: $poppins;
+        overflow: hidden;
+
+        .bestDiv {
+            color: white;
+            margin-top: 5rem;
+            text-align: center;
+            font-size: 1.2rem;
+            
+            
+            h1 {
+                position: relative;
+                width: 23rem;
+                text-align: center;
+                margin: 0 auto;
+                margin-bottom: 2rem;
+                span {
+                    color: #64A959;
+                    
+                }
+            }
+        }
+
+        .foodies {
+            width: 100%;
+            height: 18rem;
+            display: grid;
+            margin: 0 auto;
+            justify-content: center;
+            grid-template-rows: 1fr;
+            grid-template-columns: 15rem 15rem 15em;
+        }
+
+        a {
+            .full {
+                width: 11rem;
+                height: 3.5rem;
+                color: white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: $orange;
+                border-radius: 17px;
+                box-shadow: 1px 6px 0px -2px rgba(79,54,36,0.71);
+                -webkit-box-shadow: 1px 6px 0px -2px rgba(79,54,36,0.71);
+                -moz-box-shadow: 1px 6px 0px -2px rgba(79,54,36,0.71);
+                margin: 0 auto;
+            }
+    
+        }
+    }
+
+    .foodDiv {
+        display: grid;
+        justify-content: center;
+
+        .foodPics {
+            width: 10rem;
+        }
+
+        .foodNames {
+            text-align: center;
+            color: white;
+            font-style:  $playfair;
+            background-image: url('img/best/NameBG.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            display: flex;
+            margin-top: -2rem;
+            margin-bottom: 1rem;
+            padding-top: 0.8rem;
+            justify-content: center;
+            
+        }
+
+        .inasal {
+            font-size: 0.8rem; 
+            padding-top: 1.1rem;
+        }
+
+        .chicken {
+            font-size: 0.8rem;
+            padding-top: 1.1rem;
+
+        }
+
+    }
+
+    .bestSeller:before {
+        content: '';
+        background-color: white;
+        position: absolute;
+        width: 5rem;
+        height: 0.1rem;
+        top: 1rem;
+        left: 1.3rem;
+    }
+
+    .bestSeller:after {
+        content: '';
+        background-color: white;
+        position: absolute;
+        width: 5rem;
+        height: 0.1rem;
+        top: 1rem;
+        right: 1.3rem;
+    }
+
+    .meals {
+        width: 100%;
+        height: 47rem;
+        .mealsContainer {
+            max-width: 40rem;
+            
+
+            h1 {
+                font-size: 1.5rem;
+                margin-top: 4rem;
+                margin-bottom: 1rem;
+            }
+    
+            .phoneContainer {
+                grid-template-columns: 10rem 12rem 10rem;
+                height: 31rem;
+                margin-top: 1rem;
+    
+                .conv {
+                    width: 15rem;
+                }
+        
+                .conv1 {
+                    left: 1rem;
+                    top: 12rem;
+                }
+        
+                .conv2 {
+                    bottom: 0;
+                    right: 1rem;
+                }
+    
+                .phone {
+                    width: 9rem;
+                }
+    
+                .phone1 {
+                    margin-right: 0.5rem;
+                }
+    
+                .phone2 {
+                    width: 12rem;
+                }
+    
+                .phone3 {
+                    margin-left: 0.5rem;
+                }
+    
+            }
+        }
+    }
+
+    // map
+    .map {
+        background-size:cover;
+        width: 100%;
+        background-position-y: -13rem; 
+        height: 32rem;
+        
+        
+        .mapContainer {
+            width: 100%;
+            height: 30rem;
+            display: grid;
+            grid-template-columns: 20rem 20rem;
+            justify-content: center;
+            align-items: center;
+
+            .textMap {
+                
+                text-align: left;
+
+                h1 {
+                    font-size: 2rem;
+                }
+
+                p {
+                    font-size: 1.1rem;
+                    font-weight: 500;
+                    
+                }
+
+                .near {
+                    margin-top: -1.6rem;
+                }
+
+                .tel {
+                    margin-top: -0.5rem;
+                }
+            }
+
+            .googleMap {
+                width: 18rem;
+                height: 16rem;
+                margin: 0 auto;
+                display: block;
+                margin-top: 2rem;
+            }
+        }
+    }
+}
+    
+
+
+@media screen and (min-width: 1200px) {
+
+    .background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 102vh;
+        width: 100%;
+        z-index: -1;
+        background-image: url('img/backGround.webp');
+    }
+
+    .mainParent {
+        height: 92vh;
+        width: 100%;
+        position: relative;
+
+        .flowers {
+            position: absolute;
+            width: 80rem;
+            height: 7rem;
+            bottom: -2.5rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+            left: 0;
+            right: 0;
+    
+            .flowers1 {
+                width: 40rem;
+            }
+    
+            .flowers2 {
+                width: 40rem;
+                display: block;
+            }
+    
+        }
+        
+        .mainContent {
+            height: 100%;
+            max-width: 80rem;
+            margin:0 auto;
+            font-family: $poppins;
+            display: grid;
+            grid-template-rows: 1fr;
+            grid-template-columns: 30rem 30rem;
+            align-items: center;
+            justify-content: center;
+            
+
+            .eggLogo {
+                width: 25rem;
+                margin-left: 0rem;
+                margin-top: 2rem;
+                justify-self: center;
+                grid-area: 1/2;
+            }
+
+            .lowerHero {
+                position: relative;
+                .good {
+                    text-align: right;
+                    font-size: 2.3rem;
+                    width: 25rem;
+                    justify-self: center;
+                    margin: 0 auto;
+                    color: white;
+                    position: relative;
+                    z-index: 2;
+                    margin-right: 3rem;
+                    margin-top: -2rem;  
+                    span {
+                        color: $caramel;
+                    }
+                    
+
+                }
+        
+                .explore {
+                    background-color: $orange;
+                    width: 8rem;
+                    height: 2.5rem;
+                    text-align: center;
+                    justify-content: center;
+                    align-items: center;
+                    display: flex;
+                    border-radius: 18px;
+                    margin: 0;
+                    color: white;
+                    font-size: 0.8rem;
+                    margin-top: 1rem;
+                    font-weight: 500;
+                    letter-spacing: 2px;
+                    z-index: 1;
+                    position: absolute;
+                    right: 0;
+                    margin-right: 2.8rem;
+                    cursor: pointer;
+        
+                }
+
+                .explore2 {
+                    background-color: #4F3624;
+                    width: 7.9rem;
+                    height: 2.5rem;
+                    border-radius: 18px;
+                    margin: 0;
+                    margin-top: 1.2em;
+                    z-index: -1;
+                    position: absolute;
+                    right: 0;
+                    margin-right: 2.85rem;
+        
+                }
+            }
+
+
+        }
+    }
+
+    .good:before {
+        content: url('img/dahon.png');
+        position: absolute;
+        z-index: -1;
+        transform: rotate(220deg) scale(1.8);
+        right: -2rem;
+        top: -4rem;
+    }
+
+    // FEATURED
+    .featured {
+        width: 100%;
+        height: 45rem;
+        background-color: #272727;
+        margin-top: -1rem;
+        font-family: $poppins;
+        overflow: hidden;
+
+        .bestDiv {
+            color: white;
+            margin-top: 5rem;
+            text-align: center;
+            font-size: 2.2rem;
+             
+            h1 {
+
+                position: relative;
+                width: 50rem;
+                text-align: center;
+                margin: 0 auto;
+                margin-bottom: 2rem;
+                span {
+                    color: #64A959;
+                    
+                }
+            }
+        }
+
+        .foodies {
+            width: 100%;
+            height: 24rem;
+            display: grid;
+            margin: 0 auto;
+            justify-content: center;
+            grid-template-rows: 1fr;
+            grid-template-columns: 19rem 19rem 19em;
+            column-gap: 1rem;
+        }
+
+        a {
+            .full {
+                width: 11rem;
+                height: 3.5rem;
+                color: white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: $orange;
+                border-radius: 17px;
+                box-shadow: 1px 6px 0px -2px rgba(79,54,36,0.71);
+                -webkit-box-shadow: 1px 6px 0px -2px rgba(79,54,36,0.71);
+                -moz-box-shadow: 1px 6px 0px -2px rgba(79,54,36,0.71);
+                margin: 0 auto;
+            }
+    
+        }
+    }
+
+    .foodDiv {
+        display: grid;
+        justify-content: center;
+
+        .foodPics {
+            width: 15rem;
+        }
+
+        .foodNames {
+            text-align: center;
+            color: white;
+            font-style:  $playfair;
+            background-image: url('img/best/NameBG.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            display: flex;
+            margin-top: -2rem;
+            margin-bottom: 1rem;
+            padding-top: 1.2rem;
+            justify-content: center;
+            font-size: 1.5rem;
+        }
+
+        .inasal {
+            font-size: 1.25rem; 
+            padding-top: 1.35rem;
+        }
+
+        .chicken {
+            font-size: 1.3rem;
+            padding-top: 1.35rem;
+            margin-right: -0.5rem;
+
+        }
+
+        .chickenPic {
+            width: 14.5rem;
+        }
+
+
+    }
+
+    .bestSeller:before {
+        content: '';
+        background-color: white;
+        position: absolute;
+        width: 14rem;
+        height: 0.2rem;
+        top: 1.9rem;
+        left: 1.3rem;
+    }
+
+    .bestSeller:after {
+        content: '';
+        background-color: white;
+        position: absolute;
+        width: 14rem;
+        height: 0.2rem;
+        top: 1.9rem;
+        right: 1.5rem;
+    }
+    .meals {
+        width: 100%;
+        height: 47rem;
+        .mealsContainer {
+            max-width: 55rem;
+
+            h1 {
+                font-size: 1.8rem;
+                margin-bottom: 2rem;
+            }
+    
+            .phoneContainer {
+                grid-template-columns: 13rem 15rem 13rem;
+                height: 33rem;
+                margin-top: -2rem;
+                .conv {
+                    width: 18rem;
+                }
+        
+                .conv1 {
+                    left: 1rem;
+                    top: 10rem;
+                }
+        
+                .conv2 {
+                    bottom: 0;
+                    right: 1rem;
+                }
+    
+                .phone {
+                    width: 10rem;
+                }
+    
+                .phone1 {
+                    margin-right: 0.5rem;
+                }
+    
+                .phone2 {
+                    width: 13rem;
+                }
+    
+                .phone3 {
+                    margin-left: 0.5rem;
+                }
+    
+            }
+        }
+    }
+
+    // map
+    .map {
+        background-size:cover;
+        width: 100%;
+        height: 32rem;
+        background-position-y: -13rem; 
+        
+        
+        .mapContainer {
+            width: 100%;
+            height: 30rem;
+            display: grid;
+            grid-template-columns: 25rem 25rem;
+
+            justify-content: center;
+            align-items: center;
+
+            .textMap {
+                
+                text-align: left;
+
+                h1 {
+                    font-size: 2rem;
+                }
+
+                p {
+                    font-size: 1.1rem;
+                    font-weight: 500;
+                    
+                }
+
+                .near {
+                    margin-top: -1.6rem;
+                }
+
+                .tel {
+                    margin-top: -0.5rem;
+                }
+            }
+
+            .googleMap {
+                width: 24rem;
+                height: 16rem;
+                margin: 0 auto;
+                display: block;
+                margin-top: 0rem;
+            }
+        }
+    }
+
+}
+
+
+@media screen and (min-width: 1400px) and (min-height: 720px) {
+    .mainParent {
+        height: 92vh;
+        width: 100%;
+        position: relative;
+
+
+        .mainContent {
+            height: 100%;
+            max-width: 80rem;
+            margin:0 auto;
+            font-family: $poppins;
+            display: grid;
+            grid-template-rows: 1fr;
+            grid-template-columns: 35rem 35rem;
+            align-items: center;
+            justify-content: center;
+            
+
+            .eggLogo {
+                width: 33rem;
+                margin-left: 0rem;
+                margin-top: 1rem;
+                justify-self: center;
+                grid-area: 1/2;
+            }
+
+            .lowerHero {
+                position: relative;
+                .good {
+                    text-align: right;
+                    font-size: 2.9rem;
+                    width: 32rem;
+                    justify-self: center;
+                    margin: 0 auto;
+                    color: white;
+                    position: relative;
+                    z-index: 2;
+                    margin-right: 3rem;
+                    margin-top: -4rem;  
+                    span {
+                        color: $caramel;
+                    }
+                    
+
+                }
+        
+                .explore {
+                    background-color: $orange;
+                    width: 9rem;
+                    height: 2.8rem;
+                    text-align: center;
+                    justify-content: center;
+                    align-items: center;
+                    display: flex;
+                    border-radius: 22px;
+                    margin: 0;
+                    color: white;
+                    font-size: 1rem;
+                    margin-top: 1.3rem;
+                    font-weight: 600;
+                    letter-spacing: 3px;
+                    z-index: 1;
+                    position: absolute;
+                    right: 0;
+                    margin-right: 2.8rem;
+                    cursor: pointer;
+        
+                }
+
+                .explore2 {
+                    background-color: #4F3624;
+                    width: 8.9rem;
+                    height: 2.8rem;
+                    border-radius: 22px;
+                    margin: 0;
+                    margin-top: 1.5em;
+                    z-index: -1;
+                    position: absolute;
+                    right: 0;
+                    margin-right: 2.85rem;
+        
+                }
+            }
+
+
+        }
+    }
+
+    .good:before {
+        content: url('img/dahon.png');
+        position: absolute;
+        z-index: -1;
+        transform: rotate(220deg) scale(2.7);
+        right: -2rem;
+        top: -4rem;
+    }
+
+    // FEATURED
+    .featured {
+        width: 100%;
+        height: 55rem;
+        background-color: #272727;
+        margin-top: -1rem;
+        font-family: $poppins;
+        overflow: hidden;
+
+        .bestDiv {
+            color: white;
+            margin-top: 6rem;
+            text-align: center;
+            font-size: 2.6rem;
+             
+            h1 {
+
+                position: relative;
+                width: 60rem;
+                text-align: center;
+                margin: 0 auto;
+                margin-bottom: 2rem;
+                span {
+                    color: #64A959;
+                    
+                }
+            }
+        }
+
+        .foodies {
+            width: 100%;
+            height: 32rem;
+            display: grid;
+            margin: 0 auto;
+            justify-content: center;
+            grid-template-rows: 1fr;
+            grid-template-columns: 24rem 24rem 24em;
+            column-gap: 1rem;
+        }
+
+        a {
+            .full {
+                width: 11rem;
+                height: 3.5rem;
+                color: white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: $orange;
+                border-radius: 17px;
+                box-shadow: 1px 6px 0px -2px rgba(79,54,36,0.71);
+                -webkit-box-shadow: 1px 6px 0px -2px rgba(79,54,36,0.71);
+                -moz-box-shadow: 1px 6px 0px -2px rgba(79,54,36,0.71);
+                margin: 0 auto;
+            }
+    
+        }
+    }
+
+    .foodDiv {
+        display: grid;
+        justify-content: center;
+
+        .foodPics {
+            width: 19rem;
+        }
+
+        .foodNames {
+            text-align: center;
+            color: white;
+            font-style:  $playfair;
+            background-image: url('img/best/NameBG.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            display: flex;
+            margin: 0 auto;
+            margin-top: -2rem;
+            margin-bottom: 1rem;
+            padding-top: 1.4rem;
+            justify-content: center;
+            font-size: 1.6rem;
+            width: 16rem;
+            
+        }
+
+        .inasal {
+            font-size: 1.3rem; 
+            padding-top: 1.6rem;
+        }
+
+        .chicken {
+            font-size: 1.4rem;
+            padding-top: 1.6rem;
+
+        }
+
+        .chickenPic {
+            width: 18.5rem;
+        }
+
+    }
+
+    .bestSeller:before {
+        content: '';
+        background-color: white;
+        position: absolute;
+        width: 18rem;
+        height: 0.2rem;
+        top: 2.2rem;
+        left: 1.3rem;
+    }
+
+    .bestSeller:after {
+        content: '';
+        background-color: white;
+        position: absolute;
+        width: 18rem;
+        height: 0.2rem;
+        top: 2.2rem;
+        right: 1.5rem;
+    }
+
+    .meals {
+        width: 100%;
+        height: 47rem;
+        .mealsContainer {
+            max-width: 60rem;
+            margin-top: 1rem;
+
+            h1 {
+                margin-top: 2rem;
+                font-size: 1.8rem;
+                margin-bottom: 4rem;
+            }
+    
+            .phoneContainer {
+                grid-template-columns: 14rem 17rem 14rem;
+
+                height: 33rem;
+    
+                .conv {
+                    width: 18rem;
+                }
+        
+                .conv1 {
+                    left: 1rem;
+                    top: 10rem;
+                }
+        
+                .conv2 {
+                    bottom: 0;
+                    right: 1rem;
+                }
+    
+                .phone {
+                    width: 11rem;
+                }
+    
+                .phone1 {
+                    margin-right: 0.5rem;
+                    margin: 0 auto;
+                }
+    
+                .phone2 {
+                    width: 14rem;
+                }
+    
+                .phone3 {
+                    margin-left: 0.5rem;
+                    margin: 0 auto;
+                }
+    
+            }
+        }
+    }
+
+        // map
+        .map {
+            background-size:cover;
+            width: 100%;
+            height: 37rem;
+            background-position-y: -13rem; 
+            
+            
+            .mapContainer {
+                width: 100%;
+                height: 30rem;
+                display: grid;
+                grid-template-columns: 27rem 29rem;
+    
+                justify-content: center;
+                align-items: center;
+    
+                .textMap {
+                    
+                    text-align: left;
+
+                    .location {
+                        margin-top: 2rem;
+                    }
+    
+                    h1 {
+                        font-size: 2.8rem;
+                        margin-top: -1rem;
+                    }
+    
+                    p {
+                        font-size: 1.4rem;
+                        font-weight: 500;
+                        
+                    }
+    
+                    .near {
+                        margin-top: -2.3rem;
+
+                    }
+
+                    .locAd {
+                        margin-bottom: 5rem;
+                    }
+    
+                    .tel {
+                        margin-top: -0.5rem;
+                    }
+                }
+    
+                .googleMap {
+                    width: 28rem;
+                    height: 18rem;
+                    margin: 0 auto;
+                    display: block;
+                    margin-top: 0rem;
+                    margin-left: 4rem;
+                }
+            }
+        }
+}
+
+@media screen and (min-width: 1600px) {
+
+    .mainParent {
+        .mainContent {
+            grid-template-columns: 40rem 40rem;
+            .eggLogo {
+                width: 35rem;
+                margin-left: 0rem;
+                margin-top: 2rem;
+            }
+            .lowerHero {
+                .good {
+
+                    font-size: 3.3rem;
+                    width: 37rem;
+ 
+                    span {
+                        color: $caramel;
+                    }
+                }
+                .explore {
+                    margin-top: 1.5rem;
+        
+                }
+
+                .explore2 {
+                    margin-top: 1.7em;
+                }
+            }
+
+
+        }
+    }
+
+            // map
+            .map {
+                background-size:cover;
+                width: 100%;
+                height: 34rem;
+                background-position-y: -13rem; 
+                
+                
+                .mapContainer {
+                    width: 100%;
+                    height: 30rem;
+                    display: grid;
+                    grid-template-columns: 29rem 29rem;
+        
+                    justify-content: center;
+                    align-items: center;
+        
+                    .textMap {
+                        
+                        text-align: left;
+    
+                        .location {
+                            margin-top: 2rem;
+                        }
+        
+                        h1 {
+                            font-size: 2.8rem;
+                            margin-top: -1rem;
+                        }
+        
+                        p {
+                            font-size: 1.4rem;
+                            font-weight: 500;
+                            
+                        }
+        
+                        .near {
+                            margin-top: -2.3rem;
+    
+                        }
+    
+                        .locAd {
+                            margin-bottom: 5rem;
+                        }
+        
+                        .tel {
+                            margin-top: -0.5rem;
+                        }
+                    }
+        
+                    .googleMap {
+                        width: 28rem;
+                        height: 24rem;
+                        margin: 0 auto;
+                        display: block;
+                        margin-top: 2rem;
+                        margin-left: 6rem;
+                    }
+                }
+            }
+    
+}
+    
+
