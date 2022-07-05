@@ -1,12 +1,5 @@
 gsap.registerPlugin(ScrollTrigger);
 
-var tl = gsap.timeline({defaults: {opacity: 0, y: 100, duration: 1}})
-
-
-tl.from('.background', {y: 1400, duration: 2, ease: Power4.easeOut})
-.from('.mainContent', {pointerEvents: "none"})
-.from('.eggLogo', {}, "-=2")
-
 var aboutUs = document.querySelector(".explore");
 
 aboutUs.addEventListener('click', (e)=>{
@@ -34,6 +27,7 @@ gsap.from('.phone1', {
         trigger: '.meals',
         scrub: 2,
         toggleActions: "play none reverse none",
+        end: "bottom 60%"
 
     }
 })
@@ -44,6 +38,7 @@ gsap.from('.phone2', {
         trigger: '.meals',
         scrub: 2,
         toggleActions: "play none reverse none",
+        end: "bottom 60%"
 
     }
 })
@@ -54,6 +49,24 @@ gsap.from('.phone3', {
         trigger: '.meals',
         scrub: 2,
         toggleActions: "play none reverse none",
+        end: "bottom 60%"
 
+    }
+})
+
+var foodies = document.querySelectorAll('.foodDiv');
+
+gsap.from(foodies, {
+    opacity: 0,
+    y: 100,
+    duration: 1,
+    ease: Power4.inOut,
+    stagger: 0.2,
+    
+
+    scrollTrigger: {
+        trigger: foodies,
+        toggleActions: "restart none none reset",
+   
     }
 })

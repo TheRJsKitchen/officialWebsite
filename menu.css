@@ -98,6 +98,8 @@
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    margin-top: -3rem;
+    margin-left: -2.3rem;
   }
   .menu .menu-wrapper .menu-row .menu-item .menu-details .menu-name {
     list-style: none;
@@ -206,6 +208,8 @@
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    margin-top: -3rem;
+    margin-left: -2.3rem;
   }
   .menu .menu-wrapper .menu-row .menu-item .menu-details .menu-name {
     list-style: none;
@@ -260,12 +264,14 @@
     line-height: 5.6rem;
     font-weight: 800;
     text-align: center;
+    margin-top: 10rem;
   }
   .menu-hero .menu-txt p {
     font-family: "Playfair Display", serif;
     font-size: 1.5rem;
     font-weight: 100;
     text-align: center;
+    margin-top: -5rem;
   }
   .menu {
     width: 100%;
@@ -326,6 +332,8 @@
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    margin-top: -3rem;
+    margin-left: -2.3rem;
   }
   .menu .menu-wrapper .menu-row .menu-item .menu-details .menu-name {
     list-style: none;
@@ -449,6 +457,8 @@
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    margin-top: -3rem;
+    margin-left: -2.3rem;
   }
   .menu .menu-wrapper .menu-row .menu-item .menu-details .menu-name {
     list-style: none;
